@@ -1,0 +1,377 @@
+{
+	"info": {
+		"_postman_id": "3f84aeba-59dc-4fd3-be2d-466e7bb474a0",
+		"name": "epam",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19378807"
+	},
+	"item": [
+		{
+			"name": "Create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"id\": 1,\n  \"username\": \"test_user\",\n  \"firstName\": \"Andriy\",\n  \"lastName\": \"Shevchenko\",\n  \"email\": \"sheva@gmail.com\",\n  \"password\": \"12345\",\n  \"phone\": \"+380671234567\",\n  \"userStatus\": 1\n}"
+				},
+				"url": {
+					"raw": "https://petstore.swagger.io/v2/user/createUser",
+					"protocol": "https",
+					"host": [
+						"petstore",
+						"swagger",
+						"io"
+					],
+					"path": [
+						"v2",
+						"user",
+						"createUser"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "10",
+							"disabled": true
+						},
+						{
+							"key": "username",
+							"value": "\"test_user\"",
+							"disabled": true
+						},
+						{
+							"key": "firstName",
+							"value": "\"Andriy\"",
+							"disabled": true
+						},
+						{
+							"key": "lastName",
+							"value": "\"Shevchenko\"",
+							"disabled": true
+						},
+						{
+							"key": "email",
+							"value": "\"sheva@Gmail.com\"",
+							"disabled": true
+						},
+						{
+							"key": "password",
+							"value": "\"12345\"",
+							"disabled": true
+						},
+						{
+							"key": "phone",
+							"value": "\"+380671234567\"",
+							"disabled": true
+						},
+						{
+							"key": "userStatus",
+							"value": "1",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Create",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"id\": 1,\n  \"username\": \"test_user\",\n  \"firstName\": \"Andriy\",\n  \"lastName\": \"Shevchenko\",\n  \"email\": \"sheva@gmail.com\",\n  \"password\": \"12345\",\n  \"phone\": \"+380671234567\",\n  \"userStatus\": 1\n}"
+						},
+						"url": {
+							"raw": "https://petstore.swagger.io/v2/user/createUser",
+							"protocol": "https",
+							"host": [
+								"petstore",
+								"swagger",
+								"io"
+							],
+							"path": [
+								"v2",
+								"user",
+								"createUser"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "10",
+									"disabled": true
+								},
+								{
+									"key": "username",
+									"value": "\"test_user\"",
+									"disabled": true
+								},
+								{
+									"key": "firstName",
+									"value": "\"Andriy\"",
+									"disabled": true
+								},
+								{
+									"key": "lastName",
+									"value": "\"Shevchenko\"",
+									"disabled": true
+								},
+								{
+									"key": "email",
+									"value": "\"sheva@Gmail.com\"",
+									"disabled": true
+								},
+								{
+									"key": "password",
+									"value": "\"12345\"",
+									"disabled": true
+								},
+								{
+									"key": "phone",
+									"value": "\"+380671234567\"",
+									"disabled": true
+								},
+								{
+									"key": "userStatus",
+									"value": "1",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"status": "Method Not Allowed",
+					"code": 405,
+					"_postman_previewlanguage": "xml",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Fri, 14 Oct 2022 19:35:18 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/xml"
+						},
+						{
+							"key": "Content-Length",
+							"value": "102"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, DELETE, PUT"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Content-Type, api_key, Authorization"
+						},
+						{
+							"key": "Server",
+							"value": "Jetty(9.2.9.v20150224)"
+						}
+					],
+					"cookie": [],
+					"body": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<apiResponse>\n    <type>unknown</type>\n</apiResponse>"
+				}
+			]
+		},
+		{
+			"name": "Update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"firstName\": \"Update\",\n  \"lastName\": \"Update\"\n}"
+				},
+				"url": {
+					"raw": "https://petstore.swagger.io/?username=test_user#/user/updateUser",
+					"protocol": "https",
+					"host": [
+						"petstore",
+						"swagger",
+						"io"
+					],
+					"path": [
+						""
+					],
+					"query": [
+						{
+							"key": "username",
+							"value": "test_user"
+						}
+					],
+					"hash": "/user/updateUser"
+				}
+			},
+			"response": [
+				{
+					"name": "Update",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"firstName\": \"Update\",\n  \"lastName\": \"Update\"\n}"
+						},
+						"url": {
+							"raw": "https://petstore.swagger.io/?username=test_user#/user/updateUser",
+							"protocol": "https",
+							"host": [
+								"petstore",
+								"swagger",
+								"io"
+							],
+							"path": [
+								""
+							],
+							"query": [
+								{
+									"key": "username",
+									"value": "test_user"
+								}
+							],
+							"hash": "/user/updateUser"
+						}
+					},
+					"status": "Not Allowed",
+					"code": 405,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Fri, 14 Oct 2022 19:40:54 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html"
+						},
+						{
+							"key": "Content-Length",
+							"value": "150"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Server",
+							"value": "nginx"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, OPTIONS"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type"
+						}
+					],
+					"cookie": [],
+					"body": "<html>\n    <head>\n        <title>405 Not Allowed</title>\n    </head>\n    <body>\n        <center>\n            <h1>405 Not Allowed</h1>\n        </center>\n        <hr>\n        <center>nginx</center>\n    </body>\n</html>"
+				}
+			]
+		},
+		{
+			"name": "Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://petstore.swagger.io/v2/user/deleteUser?username=test_user",
+					"protocol": "https",
+					"host": [
+						"petstore",
+						"swagger",
+						"io"
+					],
+					"path": [
+						"v2",
+						"user",
+						"deleteUser"
+					],
+					"query": [
+						{
+							"key": "username",
+							"value": "test_user"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Delete",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://petstore.swagger.io/v2/user/deleteUser?username=test_user",
+							"protocol": "https",
+							"host": [
+								"petstore",
+								"swagger",
+								"io"
+							],
+							"path": [
+								"v2",
+								"user",
+								"deleteUser"
+							],
+							"query": [
+								{
+									"key": "username",
+									"value": "test_user"
+								}
+							]
+						}
+					},
+					"status": "Not Found",
+					"code": 404,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Fri, 14 Oct 2022 19:43:43 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "0"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, DELETE, PUT"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Content-Type, api_key, Authorization"
+						},
+						{
+							"key": "Server",
+							"value": "Jetty(9.2.9.v20150224)"
+						}
+					],
+					"cookie": [],
+					"body": null
+				}
+			]
+		}
+	]
+}
